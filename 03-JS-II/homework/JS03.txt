@@ -1,0 +1,15 @@
+for 
+Nos permite controlar cuantas veces sea necesaria repetir un codigo y de esa manera poder,
+ejecutarlo con cierta restriccion.
+
+&&
+Es la manera logica de de condicionar varios argumentos que si se cumple todo los requrimientos,
+el resultado se Verdadero de lo contrario falso
+
+||
+
+Es la manera logica de condicionar varios argumentos, con que se cumpla solo uno el resultado,
+sera positivo de lo contrario falso
+
+!
+Es la manera de decirle a la maquina que es diferente a algo.
