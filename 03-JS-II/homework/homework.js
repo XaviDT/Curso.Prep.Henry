@@ -1,13 +1,16 @@
 // No cambies los nombres de las funciones.
 
-const { sonIguales, multiplica } = require("../../02-JS-I/homework/homework");
+
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  return Math.max(x,y) 
+  if (x > y) return x;
+  if (y > x) return y;
+  return x;
+  //return Math.max(x,y) ---- es otra forma 
 }
 
 function mayoriaDeEdad(edad) {
@@ -45,10 +48,17 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
       if(idioma === "aleman") return "Guten Tag!"
       if(idioma === "mandarin") return "Ni Hao!"
-     if (idioma === "ingles") return "Hello!"
-     else return "Hola!"
+      if (idioma === "ingles") return "Hello!"
+      else return "Hola!"
+
+      //switch(idioma){
+      // case "aleman" : return "Guten Tag!"
+      // case "mandarin" : return "Ni Hao!!"
+      // case "ingles" : return "Hello!"
+       //default : return "Hola!"  }
 }
 
 
@@ -64,11 +74,18 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 
-  if (color === "blue")   return "This is blue"
-  if (color === "red")    return "This is red"
-  if (color === "green")  return "This is green"
-  if (color === "orange") return "This is orange"
-  else return "Color not found"
+  switch(color){
+    case "blue" : return "This is blue"
+    case "red" : return "This is red"
+    case "green" : return "This is green"
+    case "orange" : return "This is orange"  
+    default : return "Color not found"
+  }
+  //if (color === "blue")   return "This is blue"
+  //if (color === "red")    return "This is red"
+  //if (color === "green")  return "This is green"
+  //if (color === "orange") return "This is orange"
+  //else return "Color not found"
 }
 
 function esDiezOCinco(numero) {
