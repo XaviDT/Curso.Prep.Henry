@@ -256,7 +256,7 @@ if (i < 10){
     return "Se interrumpió la ejecución"
           }
 else {
-       return  array
+       return array
       }
 
 }
